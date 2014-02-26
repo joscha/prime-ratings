@@ -20,6 +20,7 @@ Works with amazon.com/.de/.co.uk
 
 ## History
 ### Chrome
+* **0.0.2** _(2014-02-26)_: i18n for English & German
 * **0.0.1** _(2014-02-26)_: initial public version
 
 ### Firefox
