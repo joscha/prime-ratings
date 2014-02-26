@@ -1,0 +1,14 @@
+{
+  "appName": {
+    "message": "IMDb & Rotten Tomatoes @ Prime Instant Video",
+    "description": "The title of the application, displayed in the web store."
+  },
+  "appShortName": {
+  	"message": "Bewertungen für Prime Instant Video",
+  	"description": "The short name of the application"
+  },
+  "appDesc": {
+    "message": "Erweitert Prime Instant Video von Amazon mit den Bewertungen von IMDb und Rotten Tomatoes.", 
+    "description":"The description of the application, displayed in the web store."
+  }
+}

@@ -1,9 +1,10 @@
 {
-  "name": "IMDb & Rotten Tomatoes @ Prime Instant Video",
-  "short_name": "Ratings for Prime Instant Video",
-  "version": "0.0.1",
+  "name": "__MSG_appName__",
+  "short_name": "__MSG_appShortName__",
+  "description": "__MSG_appDesc__",
+  "default_locale": "en",
+  "version": "0.0.2",
   "manifest_version": 2,
-  "description": "Enhances Prime Instant Video by amazon with movie ratings from IMDb and Rotten Tomatoes.",
   "icons": {
     "16": "shared/icons/icon16.png",
     "48": "shared/icons/icon48.png",
