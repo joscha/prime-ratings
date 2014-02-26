@@ -1,0 +1,31 @@
+{
+  "name": "prime-ratings",
+  "version": "0.0.1",
+  "homepage": "https://github.com/joscha/prime-ratings",
+  "authors": [
+    "Joscha Feth <joscha@feth.com>"
+  ],
+  "description": "IMDb & Rotten Tomatoes ratings for Prime Instant Video",
+  "keywords": [
+    "imdb",
+    "rotten",
+    "tomatoes",
+    "ratings",
+    "prime",
+    "instant",
+    "movies",
+    "amazon"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "2.1.0"
+  }
+}

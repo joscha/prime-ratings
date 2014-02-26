@@ -1,0 +1,24 @@
+{
+  "name": "prime-ratings",
+  "description": "Enhances Prime Instant Video from amazon with movie ratings from IMDb and Rotten Tomatoes.",
+  "author": "Joscha Feth <joscha@feth.com>",
+  "license": "MIT",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/joscha/prime-ratings.git"
+  },
+  "private": true,
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-jshint": "~0.7.2",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-mozilla-addon-sdk": "~0.3.2",
+    "grunt-contrib-copy": "~0.4.1",
+    "bower": "~1.2.8",
+    "grunt-contrib-compress": "~0.5.3"
+  },
+  "scripts": {
+    "install": "./node_modules/bower/bin/bower install"
+  }
+}

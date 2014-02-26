@@ -1,0 +1,11 @@
+{
+  "id": "prime-ratings@feth.com",
+  "name": "prime-ratings",
+  "description": "Enhances Prime Instant Video by amazon with movie ratings from IMDb and Rotten Tomatoes.",
+  "fullName": "IMDb & Rotten Tomatoes ratings for Prime Instant Video",
+  "author": "Joscha Feth <joscha@feth.com>",
+  "license": "MIT",
+  "version": "0.0.1",
+  "icon": "data/shared/icons/icon32.png",
+  "icon64": "data/shared/icons/icon64.png"
+}

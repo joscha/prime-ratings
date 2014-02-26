@@ -1,0 +1,39 @@
+{
+  "name": "IMDb & Rotten Tomatoes for Prime Instant Video",
+  "short_name": "Ratings for Prime Instant Video",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Enhances Prime Instant Video by amazon with movie ratings from IMDb and Rotten Tomatoes.",
+  "icons": {
+    "16": "shared/icons/icon16.png",
+    "48": "shared/icons/icon48.png",
+    "128": "shared/icons/icon128.png"
+  },
+  "permissions": [
+    "*://www.amazon.com/*",
+    "*://www.amazon.de/*",
+    "*://www.amazon.co.uk/*"
+  ],
+  "content_scripts": [
+    {
+      "run_at": "document_end",
+      "matches": [
+        "*://www.amazon.com/*",
+        "*://www.amazon.de/*",
+        "*://www.amazon.co.uk/*"
+      ],
+      "css" : [
+        "chrome.css"
+      ],   
+      "js": [
+        "components/jquery.min.js",
+        "chrome.js",
+        "shared/inject.js"
+      ]
+    }
+  ],
+  "web_accessible_resources": [
+    "shared/inject.css",
+    "components/jquery.min.map"
+  ]
+}

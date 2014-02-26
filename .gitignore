@@ -1,0 +1,9 @@
+data/components
+dist
+node_modules
+bower_components
+tmp
+extension/chrome/components
+extension/chrome/shared
+extension/firefox/data/components
+extension/firefox/data/shared
