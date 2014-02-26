@@ -7,8 +7,8 @@ Each movie and series detail page gets two more rating entries (if the movie/ser
 
 ## Install
 
-* for Chrome from [the Chrome Webstore](https://chrome.google.com/webstore/).
-* for Firefox from [Mozilla Addons](https://addons.mozilla.org/de/firefox/addon/).
+* for Chrome from [the Chrome Webstore](https://chrome.google.com/webstore/detail/pfnkplljjpbbbclllghfeakdlfcldpfj).
+* for Firefox from [Mozilla Addons](https://addons.mozilla.org/de/firefox/addon/prime-ratings/).
 
 
 ## Screenshot
