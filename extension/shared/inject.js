@@ -1,7 +1,7 @@
 (function($) {
 	'use strict';
 
-	var isDebug = true;
+	var isDebug = false;
 	var $body = $('body');
 	var lastTitle = "";
 
