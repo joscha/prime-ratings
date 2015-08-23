@@ -1,25 +1,36 @@
 (function($) {
 	'use strict';
 
-	var isDebug = false;
+	var isDebug = true;
 	var $body = $('body');
+	var lastTitle = "";
 
 	function addRating(results) {
+		//Check if hover window is available
+		var $hoverbox = $('#universal-hover');
+		if ($hoverbox.length){
+			if (isDebug) window.console.debug("Hover Div detected");
+			$box = $('#uh-starRating');
+		}
+		else{
+			if (isDebug) window.console.debug("No hover Div detected");
+			var $box = $('.dp-rating-box');
+		}
 		
-		var $box = $('.dp-rating-box');
 		var hasImdbRating = $box.find('.imdb-rating').length > 0;
 
 		$.each(results, function(index, result) {
 			if(result.type === 'imdb' && hasImdbRating) {
 				// don't add a second IMDb
 				return;
-			}
+			}			
 			var $list = $('<span>', {
 					'class': 'imdb-rating',
 					'title': result.details || ''
 				});
 			$list.append('<i class="'+result.type+'-logo-small">'+result.label+'</i>');
 			$list.append('<strong>'+result.rating+'</strong>/'+result.maxRating);
+
 			$list.appendTo($box);
 		});
 	}
@@ -102,6 +113,9 @@
 			$body.trigger('ratings.load', [query]);
 		} else {
 			window.console.error('Could not find any data');
+			var $hoverbox = $('#universal-hover');
+			var $errorText = $("<span>Could not retrieve IMDB and Rotten Tomatoes Ratings!</span>");
+			if ($hoverbox.length) $errorText.appendTo($('#uh-starRating'));
 		}
 	}	
 
@@ -118,9 +132,74 @@
 			fallbackQuery(queries);
 		}
 	});
+	
 
+	//Get Ratings and stuff
 	if (queries.length > 0) {
 		fallbackQuery();
 	}
+	//Taken from http://stackoverflow.com/questions/3219758/detect-changes-in-the-dom
+	var observeDOM = (function(){
+	    var MutationObserver = window.MutationObserver || window.WebKitMutationObserver,
+		eventListenerSupported = window.addEventListener;
+
+	    return function(obj, callback){
+		if( MutationObserver ){
+		    // define a new observer
+		    var obs = new MutationObserver(function(mutations, observer){
+			if( mutations[0].addedNodes.length || mutations[0].removedNodes.length )
+			    callback();
+		    });
+		    // have the observer observe foo for changes in children
+		    obs.observe( obj, { childList:true, subtree:true });
+		}
+		else if( eventListenerSupported ){
+		    obj.addEventListener('DOMNodeInserted', callback, false);
+		    obj.addEventListener('DOMNodeRemoved', callback, false);
+		}
+	    }
+	})();
+
+	// Observe a specific DOM element if it exists:
+	if (document.getElementById('content') != null)	observeDOM( document.getElementById('content') ,function(){ 
+		//check if hover div exists
+		var $hoverbox = $('#universal-hover');
+		if ($hoverbox == null) return;
+		
+		//Get Movie data from hover div
+		var description = $("#header a:first").text();
+		var year = $("#uh-releaseDate").text();
+		
+		if (description == lastTitle) return;
+		
+		lastTitle = description;
+		
+		if(description && year) {
+			queries.push(function() {
+				return {
+					t:			description,
+					y:			year,
+					tomatoes:	true
+				};			
+			});
+		}
+
+		else if (description) {
+			queries.push(function() {
+				return {
+					t:			description,
+					tomatoes:	true
+				};
+			});
+		}
+	   
+		window.console.log("Requested:"+description);
+
+	   
+	   //Get Ratings and stuff
+		if (queries.length > 0) {
+			fallbackQuery();
+		}
+	});
 
 })(window.jQuery);
