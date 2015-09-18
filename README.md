@@ -1,6 +1,8 @@
 # Chrome and Firefox extension for adding IMDb and Rotten Tomatoes ratings to [Prime Instant Video](https://www.amazon.com)
 __* * * Neither this extension, nor its author is in any way affiliated with amazon. * * *__
 
+[![Build Status](https://travis-ci.org/joscha/prime-ratings.svg)](https://travis-ci.org/joscha/prime-ratings)
+
 ## Description
 This extension seamlessly adds the ratings from IMDb and Rotten Tomatoes into the Prime Instant Video web interface.
 Each movie and series detail page gets two more rating entries (if the movie/series can be found in IMDb/Rotten Tomatoes).
