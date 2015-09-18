@@ -3,7 +3,7 @@
   "description": "Enhances Prime Instant Video from amazon with movie ratings from IMDb and Rotten Tomatoes.",
   "author": "Joscha Feth <joscha@feth.com>",
   "license": "MIT",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "repository": {
     "type": "git",
     "url": "https://github.com/joscha/prime-ratings.git"
