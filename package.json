@@ -19,6 +19,7 @@
     "grunt-contrib-compress": "~0.5.3"
   },
   "scripts": {
-    "install": "./node_modules/bower/bin/bower install"
+    "install": "./node_modules/.bin/bower install",
+    "test": "./node_modules/.bin/grunt"
   }
 }
