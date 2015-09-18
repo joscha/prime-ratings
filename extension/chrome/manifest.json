@@ -24,7 +24,8 @@
         "*://www.amazon.co.uk/*"
       ],
       "css" : [
-        "chrome.css"
+        "chrome.css",
+	"shared/inject.css"
       ],   
       "js": [
         "components/jquery.min.js",
