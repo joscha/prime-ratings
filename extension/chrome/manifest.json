@@ -35,7 +35,6 @@
     }
   ],
   "web_accessible_resources": [
-    "shared/inject.css",
-    "components/jquery.min.map"
+    "shared/inject.css"
   ]
 }

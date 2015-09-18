@@ -55,24 +55,8 @@ module.exports = function(grunt) {
 
     copy: {
       ff: {
-        options: {
-          processContent: function(content, file) {
-            switch(file) {
-              case 'bower_components/jquery/jquery.min.js':
-                // make sure fingerprint of library fits, so Mozilla addons does not reject it...
-                return content.replace('//@ sourceMappingURL=jquery.min.map','//@ sourceMappingURL=jquery-2.1.0.min.map');
-            }
-            return content;
-          }
-        },
         files: [
           {expand: true, cwd: 'extension/shared/', src: ['**'], dest: 'extension/firefox/data/shared/'},
-          {
-            flatten: true,
-            src: ['bower_components/jquery/dist/jquery.min.map'],
-            dest: 'extension/firefox/data/components/jquery-2.1.0.min.map',
-            filter: 'isFile'
-          },
           {
             flatten: true,
             src: ['bower_components/jquery/dist/jquery.min.js'],
