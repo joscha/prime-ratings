@@ -20,6 +20,7 @@
     "grunt-mozilla-addon-sdk": "~0.4.0"
   },
   "scripts": {
+    "postinstall": "./node_modules/.bin/grunt setup",
     "install": "./node_modules/.bin/bower install",
     "test": "./node_modules/.bin/grunt"
   }
