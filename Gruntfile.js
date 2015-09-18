@@ -98,7 +98,7 @@ module.exports = function(grunt) {
           pretty: true
         },
         files: [
-          {expand:true, cwd: 'extension/chrome', src: ['**'], dest: '/'}
+          {expand:true, cwd: 'extension/chrome', src: ['**/*'], dest: '/'}
         ]
       }
     }
