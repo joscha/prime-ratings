@@ -19,7 +19,7 @@ pageMod.PageMod({
 	onAttach: function(worker) {
 		worker.port.on('ratings.load', function(query) {
 			Request({
-				url: 'http://www.omdbapi.com/',
+				url: 'https://www.omdbapi.com/',
 				content: query,
 				overrideMimeType: "application/json; charset=utf-8",
 				onComplete: function (response) {
