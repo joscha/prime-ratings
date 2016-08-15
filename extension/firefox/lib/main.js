@@ -18,6 +18,11 @@ pageMod.PageMod({
 	contentScriptWhen: "ready",
 	onAttach: function(worker) {
 		worker.port.on('ratings.load', function(query) {
+			query.t = query.t
+				.replace('[dt./OV]', '')
+				.replace('[OV]', '')
+				.replace('[OV/OmU]', '');
+
 			Request({
 				url: 'https://www.omdbapi.com/',
 				content: query,
