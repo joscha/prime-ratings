@@ -28,7 +28,7 @@ Works with amazon.com/.de/.co.uk
 * **0.0.1** _(2014-02-26)_: initial public version
 
 ### Firefox
-* **0.0.5** _(2016-08-16)_: OMDB API fix (thanks @thinking-aloud)
+**Firefox does not accept cfx-based add-ons any longer, hence this add-on is not in the store any more**
 * **0.0.3** _(2015-09-18)_: Ratings in popups in overview (thanks @tobag90)
 * **0.0.1** _(2014-02-26)_: initial public version
 
