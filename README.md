@@ -22,11 +22,13 @@ Works with amazon.com/.de/.co.uk
 
 ## History
 ### Chrome
+* **0.0.5** _(2016-08-16)_: OMDB API fix (thanks @thinking-aloud)
 * **0.0.3** _(2015-09-18)_: Ratings in popups in overview (thanks @tobag90)
 * **0.0.2** _(2014-02-26)_: i18n for English & German
 * **0.0.1** _(2014-02-26)_: initial public version
 
 ### Firefox
+* **0.0.5** _(2016-08-16)_: OMDB API fix (thanks @thinking-aloud)
 * **0.0.3** _(2015-09-18)_: Ratings in popups in overview (thanks @tobag90)
 * **0.0.1** _(2014-02-26)_: initial public version
 
