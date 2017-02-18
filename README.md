@@ -1,4 +1,6 @@
 # Chrome and Firefox extension for adding IMDb and Rotten Tomatoes ratings to [Prime Instant Video](https://www.amazon.com)
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/joscha/prime-ratings.svg)](https://greenkeeper.io/)
 __* * * Neither this extension, nor its author is in any way affiliated with amazon. * * *__
 
 [![Build Status](https://travis-ci.org/joscha/prime-ratings.svg)](https://travis-ci.org/joscha/prime-ratings)
